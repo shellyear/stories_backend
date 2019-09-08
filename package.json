@@ -4,11 +4,9 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "client-install": "npm install --prefix client",
     "start": "ts-node server/src/index.ts",
     "server": "nodemon",
-    "client": "npm start --prefix client ",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "client": "npm start --prefix client "
   },
   "keywords": [],
   "author": "",
