@@ -7,8 +7,8 @@ email verification with nodemailer; admin account to delete or edit user stories
 ## Instruction
 
 ### `npm start`
-it will install packages too 
-server starts at localhost:3000
+install packages and run application 
+
 
 
 
