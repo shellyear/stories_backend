@@ -29,9 +29,14 @@ class Server {
     private mongoLaunch(): void {
         const URL = process.env.MONGODB_URL;
         mongoose.set('debug', true);
-        mongoose.connect(URL, { useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false }) 
+        mongoose.connect(URL, { 
+            useNewUrlParser: true, 
+            useCreateIndex: true, 
+            useFindAndModify: false,
+            useUnifiedTopology: true, 
+        }) 
         .then(() => {
-            console.log(`connected to ${URL}`);
+          console.log(`connected to ${URL}`);
         })
         .catch(err => console.log(err.message));  
     }
